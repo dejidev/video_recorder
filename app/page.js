@@ -2,9 +2,9 @@ import Image from 'next/image';
 import Header from './components/Header';
 import Features from './components/Features';
 import Work from './components/Work';
-import home1 from "./assets/home1.png";
-import home2 from "./assets/home2.png";
-import home3 from "./assets/home3.png";
+import home1 from "./assets/home1.jpg";
+import home2 from "./assets/home2.jpg";
+import home3 from "./assets/home3.jpg";
 import over from "./assets/over.png";
 import arrow from "./assets/arrow-right.png";
 import Footer from './components/Footer';
@@ -42,19 +42,19 @@ export default function Home() {
           </div>
 
 
-          <div className='relative flex items-stretch  h-full md:w-1/2 bg-red-200'>
+          <div className='relative flex items-stretch  h-full md:w-1/2'>
             <div className='flex flex-col flex-1'>
               <Image src={home1} alt='home1' className='flex-1 object-cover mb-3 rounded-md' />
               <Image src={home2} alt='home2' className='flex-1 object-cover rounded-md ' />
             </div>
 
-            <div className=' flex-1 pl-3 pr-4 md:pr-8'>
-              <Image src={home3} alt='home3' className='object-cover h-full z-10' style={{ zIndex: '1' }} />
+            <div className=' flex-1 pl-3 pr-4 md:pr-8 z-10 '>
+              <Image src={home3} alt='home3' className='object-cover h-full z--10' style={{ zIndex: '100' }} />
 
             </div>
-            <div className='absolute top-[-40px] right-[-10px]'>
-              <Image src={over} alt='home1' className='z-10' />
-            </div>
+              <div className='absolute top-[-40px] right-[-15px] '>
+                <Image src={over} alt='home1' />
+              </div>
           </div>
 
 

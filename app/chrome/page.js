@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import logo from "../assets/logo1.png";
 import fb from "../assets/fb.png";
 import google from "../assets/google.png";
@@ -7,7 +8,9 @@ import or from "../assets/or.png";
 const page = () => {
     return (
         <div className="mx-6 md:mx-16 mt-3 md:mt-6 mb-6" >
-            <Image src={logo} alt="logo" />
+            <Link href="/">
+                <Image src={logo} alt="logo" />
+            </Link>
             <div className="flex flex-col justify-center items-center gap-3 text-center">
                 <h1 className="text-2xl md:text-[32px] font-bold">Log in or Sign up</h1>
                 <p className=" text-sm font-light md:w-[320px]  mb-6">Join millions of others in sharing successful moves on HelpMeOut.</p>
@@ -54,7 +57,9 @@ const page = () => {
 
 
                 <div className="flex items-center justify-center gap-4 border bg-[#120B48] text-[#fff] px-[10px] py-[9px] w-[250px] sm:w-[382px] md:w-[475px] text-sm md:text-base  rounded-xl">
-                    <p>Sign In</p>
+                    <Link href="/home">
+                        <p>Sign In</p>
+                    </Link>
                 </div>
             </div>
         </div>
