@@ -34,7 +34,10 @@ export default function Home() {
 
               <div className='py-8 mb-16 md:mb-5'>
                 <button className='flex items-center gap-3 px-4 py-3 md:px-[24px] md:py-[22px] text-white bg-[#120B48] rounded-lg' >
-                  <p className=' text-sm md:text-[18px] leading-[21.11px]'>Install HelpMeOut</p>
+<a href='https://github.com/dejidev/recording_extension' target='_blank' rel='noopener noreferrer'>
+  <p className='text-sm md:text-[18px] leading-[21.11px]'>Install HelpMeOut</p>
+</a>
+
                   <Image src={arrow} alt='arr' />
                 </button>
               </div>
